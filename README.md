@@ -1,3 +1,8 @@
+# App Overview
+
+In this application I will make a simple app that that will display an images based on a search bar request.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

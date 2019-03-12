@@ -8,7 +8,11 @@ In this application I will make a simple app that that will display an images ba
 [A simple intro to Javascript imports and exports](https://medium.com/@thejasonfile/a-simple-intro-to-javascript-imports-and-exports-389dd53c3fac
 ) 
 
-![alt text](./public/imageSearchWireframe.png "wirframe")
+#### Wireframe 2
+![alt text](./public/Built-out-site.png "wirframe 1")
+
+#### Wireframe 1
+![alt text](./public/imageSearchWireframe.png "wirframe 1")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

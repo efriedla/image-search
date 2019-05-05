@@ -16,6 +16,10 @@ In this application I will make a simple app that that will display an images ba
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## npm
+
+make sure to uninstall faker for live production
+
 ## Available Scripts
 
 In the project directory, you can run:

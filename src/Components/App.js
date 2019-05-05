@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import Unsplash from '../api/Unsplash';
 import List from './List';
 import Navbar from './Navbar';
+import Comments from './Comments/Comments';
 
 class App extends React.Component {
     state = { images: []}
@@ -16,10 +17,11 @@ class App extends React.Component {
     render(){
         return(
             <div>
-                <Navbar />
+                {/* <Navbar /> */}
                 <div className="ui container">
                     
-                    <SearchBar onSubmit={this.onSearchSubmit}/>
+                <SearchBar onSubmit={this.onSearchSubmit}/>
+                <Comments />
                 <h3>found: {this.state.images.length} images</h3>
                 <List images={this.state.images}/>
                 </div>

@@ -25,7 +25,7 @@ class ImageCard extends React.Component {
                 ref={this.imageRef}
                 
                 />
-
+                
             </div>
         );
     };

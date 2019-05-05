@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CommentDetails = (props) => {
-    console.log(props.day)
+    // console.log(props.review)
     return(
         <div className="comment">
                 <a className="avatar" herf="/">
@@ -13,7 +13,7 @@ const CommentDetails = (props) => {
                     <div className="date">{props.day} days ago</div>
                     <div className="rating">
                     <i className="star icon"></i>
-                    5 Faves.
+                    {props.review} Stars.
                     </div>
                 </div>
                 <div className="text">

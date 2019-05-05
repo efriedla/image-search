@@ -4,7 +4,7 @@ import faker from 'faker';
 
 const Comments = () => {
     var rating;
-    var createReview = (max,min) =>{
+    var createNumberRange = (max,min) =>{
         return rating = Math.floor((Math.random() * max) + min);
     }
     return(
@@ -14,24 +14,24 @@ const Comments = () => {
                 author = {faker.name.findName()} 
                 image = {faker.image.avatar()}
                 comment = {faker.lorem.paragraph()} 
-                day = {createReview(2,1)}
-                review = {createReview(4,1)}
+                day = {createNumberRange(2,1)}
+                review = {createNumberRange(1,4)}
             />
             
             <CommentDetails 
                 author = {faker.name.findName()} 
                 image = {faker.image.avatar()}
                 comment = {faker.lorem.sentences()} 
-                day = {createReview(10,5)}
-                review = {createReview(3,1)}
+                day = {createNumberRange(10,5)}
+                review = {createNumberRange(2,4)}
             />
             
             <CommentDetails 
                 author = {faker.name.findName()} 
                 image = {faker.image.avatar()}
                 comment = {faker.lorem.lines()} 
-                day = {createReview(20,5)}
-                review = {createReview(5,0)}
+                day = {createNumberRange(20,5)}
+                review = {createNumberRange(2,3)}
             />
         </div>
     )

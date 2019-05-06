@@ -1,6 +1,9 @@
 import React from 'react';
 import CommentDetails from './CommentDetails';
+import AprovalCard from './ApprovalCard';
 import faker from 'faker';
+import ApprovalCard from './ApprovalCard';
+
 
 const Comments = () => {
     var rating;
@@ -9,14 +12,15 @@ const Comments = () => {
     }
     return(
         <div className="ui comments">
-            
-            <CommentDetails 
-                author = {faker.name.findName()} 
-                image = {faker.image.avatar()}
-                comment = {faker.lorem.paragraph()} 
-                day = {createNumberRange(2,1)}
-                review = {createNumberRange(1,4)}
-            />
+            <ApprovalCard>
+                <CommentDetails 
+                    author = {faker.name.findName()} 
+                    image = {faker.image.avatar()}
+                    comment = {faker.lorem.paragraph()} 
+                    day = {createNumberRange(2,1)}
+                    review = {createNumberRange(1,4)}
+                />
+            </ApprovalCard>
             
             <CommentDetails 
                 author = {faker.name.findName()} 
